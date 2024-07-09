@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "80df0771-54bc-41f5-a739-b4d62491d2ce",
+		"name": "EMP23collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24221867",
+		"_collection_link": "https://winter-shuttle-570269.postman.co/workspace/My-Workspace~dc60ee7a-5c5d-408f-8180-cd3b9624906c/collection/24221867-80df0771-54bc-41f5-a739-b4d62491d2ce?action=share&source=collection_link&creator=24221867"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/events/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://event-management-platform-ke0w.onrender.com/events/",
+					"protocol": "https",
+					"host": [
+						"event-management-platform-ke0w",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"events",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/events/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventName\": \"Annual Tech Conference\",\r\n    \"eventDate\": \"2024-08-15T09:00:00Z\",\r\n    \"organizer\": \"John Doe\",\r\n    \"email\": \"johndoe@example.com\",\r\n    \"phone\": \"123-456-7890\",\r\n    \"location\": {\r\n        \"street\": \"123 Tech Street\",\r\n        \"city\": \"Tech City\",\r\n        \"state\": \"TC\",\r\n        \"zip\": \"12345\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://event-management-platform-ke0w.onrender.com/events/",
+					"protocol": "https",
+					"host": [
+						"event-management-platform-ke0w",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"events",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/events/668d0c1a8227ce07d2f41336",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eventName\": \"Updated Tech Conference\",\r\n    \"eventDate\": \"2024-09-01T09:00:00Z\",\r\n    \"organizer\": \"Jane Doe\",\r\n    \"email\": \"janedoe@example.com\",\r\n    \"phone\": \"098-765-4321\",\r\n    \"location\": {\r\n        \"street\": \"456 Updated Street\",\r\n        \"city\": \"Updated City\",\r\n        \"state\": \"UC\",\r\n        \"zip\": \"54321\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://event-management-platform-ke0w.onrender.com/events/668d1b1d833b1c86d0f41721",
+					"protocol": "https",
+					"host": [
+						"event-management-platform-ke0w",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"events",
+						"668d1b1d833b1c86d0f41721"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/events/668d0c1a8227ce07d2f41336",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://event-management-platform-ke0w.onrender.com/events/668d1b1d833b1c86d0f41721",
+					"protocol": "https",
+					"host": [
+						"event-management-platform-ke0w",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"events",
+						"668d1b1d833b1c86d0f41721"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/events/668d0d128227ce07d2f41342",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://event-management-platform-ke0w.onrender.com/events/668d0d128227ce07d2f41342",
+					"protocol": "https",
+					"host": [
+						"event-management-platform-ke0w",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"events",
+						"668d0d128227ce07d2f41342"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/events?eventName=Annual Tech Conference&organizer=John Doe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://event-management-platform-ke0w.onrender.com/events?eventName=Annual Tech Conference&organizer=John Doe",
+					"protocol": "https",
+					"host": [
+						"event-management-platform-ke0w",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"events"
+					],
+					"query": [
+						{
+							"key": "eventName",
+							"value": "Annual Tech Conference"
+						},
+						{
+							"key": "organizer",
+							"value": "John Doe"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
