@@ -42,22 +42,6 @@ This is a basic Event Management Platform (EMP) built using Node.js, Mongoose, M
     npm start
     ```
 
-## Project Structure
-
-event-management-platform/
-├── src/
-│   ├── config/
-│   │   └── database.config.ts
-│   ├── controllers/
-│   │   └── event.controller.ts
-│   ├── models/
-│   │   └── event.model.ts
-│   ├── routes/
-│   │   └── event.routes.ts
-│   ├── app.ts
-│   └── server.ts
-├── package.json
-└── tsconfig.json
 
 
 The server will start running at `http://localhost:3000`.
